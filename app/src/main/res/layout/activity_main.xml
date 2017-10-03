@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.isabelle.foodfinder.MainActivity"
-    android:background="#c9fdeb45">
+    android:background="@color/background">
 
     <TextView
         android:id="@+id/header1"
