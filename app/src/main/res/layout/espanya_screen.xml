@@ -20,10 +20,9 @@
         android:id="@+id/footer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp"
         android:text="Tap the screen to stop"
         android:textSize="18sp"
-        android:layout_above="@+id/btn_home"
+        android:layout_alignBottom="@+id/img"
         android:layout_centerHorizontal="true" />
 
     <ImageView
@@ -31,19 +30,39 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:src="@drawable/img"
-        android:layout_centerInParent="true"/>
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
 
     <Button
         android:id="@+id/btn_home"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
         android:text="Home"
         android:textSize="14sp"
         android:background="@color/colorPrimary"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_alignBaseline="@+id/btn_promo"
+        android:layout_alignBottom="@+id/btn_promo"
+        android:layout_alignLeft="@+id/img"
+        android:layout_alignStart="@+id/img" />
+
+    <Button
+        android:id="@+id/btn_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promos"
+        android:textSize="14sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/footer"
+        android:layout_toRightOf="@+id/btn_home"
+        android:layout_toEndOf="@+id/btn_home" />
 
 
 </RelativeLayout>
